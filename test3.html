@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container.item {
+            background-color: burlywood;
+        }
+        .main-comtainer .item {
+            background-color: darkkhaki;
+        }
+        .button{
+            background-color: darkgreen;
+            border: 0;
+            padding: 10;
+        }
+        .button.active{
+            background-color: deeppink;
+        }
+        .button.danger{
+            background-color: deepskyblue;
+        }
+        .item1 + .item2{
+            background-color: darkslategray;
+        }
+    </style>
+</head>
+<body>
+    <div class="footer-container">
+        container
+        <div class="item">
+            item1
+        </div>
+    </div>
+    <div class="footer-container">
+        container
+        <div class="item">
+           item2 
+        </div>
+    </div>
+    <div class="item">
+        item3
+        </div>
+    </div>
+</div>
+
+    <button class="button">Click Me</button>
+    <button class="button active">Click Me</button>
+    <button class="button danger">Click Me</button>
+
+    <div class="item1"></div>
+</body>
+</html>

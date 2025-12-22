@@ -1,15 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>Page Title</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #Register {
+            font-size: 24px;
+            color: rgb(10, 227, 238);
+            font-weight: 800;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color:darkgrey;
+            border: 1px sandybrown;
+            
+        } 
+        .form {
+            border: 2px rgb(66, 35, 97);
+        }
+        @font-face {
+            font-family: 'Kanit';
+            src: url('./Kanit/Kanit-Regular.ttf') format('truetype');
+        }
+        body {
+            font-family: 'Kanit',sans-serif;
+        }
+    </style>
 </head>
 <body>
+    <div id="Register">Register Form</div>
+    ชื่อ <input class="form" type="text">
+    นามสกุล <input class="form"type="text"> <br>
+    อายุ <input type="number" min="0" max="150"> <br>
+    เพศ <input type="radio" name="gender" value="male"> ชาย
+        <input type="radio" name="gender" value="female"> หญิง <br>
+ 
+    งานอดิเรก <br>
+    <input type="checkbox" name="hobby" value="reading"> อ่านหนังสือ <br>
+    <input type="checkbox" name="hobby" value="travelling"> ท่องเที่ยว <br>
+    <input type="checkbox" name="hobby" value="sport"> เล่นกีฬา <br>
 
-<h1 style="font-family:verdana;">Primary Colors</h1>
-
-<h2 style="color:red;">Red</h2>
-<h2 style="color:yellow;">Yellow</h2>
-<h2 style="color:blue;">blue</h2>
+    อธิบายตัวเอง <br>
+    <textarea rows="4" cols="50"></textarea> <br>
+    <input type="submit" value="submit">
 
 </body>
 </html>
