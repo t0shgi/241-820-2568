@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- 
+selectDOM
+docoment.getElementById
+docoment.getElementByName
+docoment.querySelector
+docoment.querySelectorAll -->
+
+</body>
+<!-- </html>
+ชื่อ <input 
+    id = "fname"
+    class="input"
+    type="text"
+    name="fname"
+    value="ทดสอบชื่อ" />
+นามสกุล <input 
+    id = "fname"
+    class="input"
+    type="text"
+    name="fname"
+    value="ทดสอบนามสกุล" /> -->
+<body>
+    <input type="radio" name="gender" value="male" onchange="changeGender()"> male
+    <input type="radio" name="gender" value="female" onchange="changeGender()"> female
+        <script>
+            function changeGender(){
+                //เลือก gender ทุก  input ออกมา
+                let gendersInputs = document.querySelectorAll('input[name="gender"]');
+
+                // ใคร checked อยู่ = เพศโดนเลือกอยู่
+                for (let i=0; i < gendersInputs.length; i++){
+                    if (gendersInputs[i].checked){
+                        console.log("Gender selescted: "+ gendersInputs[i].value);
+            }
+        }
+    }
+        </script>
+
+   <!-- <button onclick="userClicked()"> คลิก!! </button>
+    <script>
+        function userClicked(){
+            console.log("User clicked the button!");
+        }
+        function divClicked(){
+            console.log("User clicked the div!");
+        }
+    </script> -->
+
+         <!-- งานอดิเรก: -->
+        <!-- <input type="checkbox" name="hobby" value="reading"> Reading
+        <input type="checkbox" name="hobby" value="travelling"> travelling
+        <input type="checkbox" name="hobby" value="gaming"> gaming
+    <script>
+        let checkboxInputs = document.querySelectorAll('input[name="hobby"]');
+        for (let i=0; i < checkboxInputs.length; i++){
+
+        }
+    </script>     -->
+</body>
+</html>
